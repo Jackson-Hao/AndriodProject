@@ -71,9 +71,6 @@ public class SignUpActivity extends AlarmControlActivity {
             }
         });
 
-
-
-
     }
     private AlertDialog alertDialog;
     private void showSignupSuccessDialog() {
@@ -84,9 +81,10 @@ public class SignUpActivity extends AlarmControlActivity {
                 .setTitle(getString(R.string.notice))
                 .setMessage(getString(R.string.signup_successful))
                 .setPositiveButton(getString(R.string.done), (dialog, which) -> {
+                    Intent intent = new Intent(SignUpActivity.this, LoginActivity.class);
                     alertDialog.dismiss();
-                    Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
                     startActivity(intent);
+                    finish();
                 })
                 .create();
         alertDialog.show();

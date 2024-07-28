@@ -22,7 +22,7 @@
     <string name="success">控制成功</string>
     <string name="failed">控制失败，设备可能不在线</string>
     <string name="notice">通知</string>
-    <string name="version">Android v1.0.0.24R2V2</string>
+    <string name="version">Android.0.0.24R2V2</string>
     <string name="about">关于软件</string>
     <string name="developer">开发者：Jackson Hao</string>
     <string name="github">本程序所有代码已在Github上开源 ﻿</string>

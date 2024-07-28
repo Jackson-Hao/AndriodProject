@@ -21,7 +21,7 @@
     <string name="success">Success</string>
     <string name="failed">Failed！Device may offline</string>
     <string name="notice">Notice</string>
-    <string name="version">Android v1.0.0.24R2V2</string>
+    <string name="version">Android.0.0.24R2V2</string>
     <string name="about">About</string>
     <string name="developer">Developer: Jackson Hao</string>
     <string name="github">All the code of this program has been open sourced on Github</string>
