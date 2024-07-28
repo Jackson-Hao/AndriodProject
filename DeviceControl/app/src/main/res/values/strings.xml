@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Device Control</string>
+    <string name="tv_1">Welcome</string>
+    <string name="button_signup">Sign up</string>
+    <string name="button_login">Login</string>
+    <string name="default_usr">Please enter user name</string>
+    <string name="default_passwd">Please enter password</string>
+    <string name="control_board">Light Control Board</string>
+    <string name="light_open">Turn On</string>
+    <string name="light_shut">Turn Off</string>
+    <string name="light_flash">About</string>
+    <string name="processing">Processing</string>
+    <string name="pls_wait">Please wait...</string>
+    <string name="welcome_message">Welcome to use</string>
+    <string name="done">Done</string>
+    <string name="login_success">Login Success</string>
+    <string name="login_failed">Login Failed</string>
+    <string name="login_failed_msg">Wrong Username or Password</string>
+    <string name="network_err">Network Error</string>
+    <string name="network_err_msg">Please check network connection</string>
+    <string name="success">Success</string>
+    <string name="failed">Failed！Device may offline</string>
+    <string name="notice">Notice</string>
+    <string name="version">Android v1.0.0.24Q2 Release</string>
+    <string name="about">About</string>
+    <string name="developer">Developer: Jackson Hao</string>
+    <string name="github">All the code of this program has been open sourced on Github</string>
+    <string name="main_page">Control Center</string>
+    <string name="main_light">Light Control</string>
+    <string name="main_alarm">Alarm Contro;</string>
+    <string name="main_more">More</string>
+    <string name="notice_more">More function is developing</string>
+    <string name="alarm_on">Set Alarm</string>
+    <string name="alarm_off">Reset Alarm</string>
+    <!-- Strings used for fragments for navigation -->
+
+</resources>

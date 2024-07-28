@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">设备控制</string>
+    <string name="tv_1">欢迎使用</string>
+    <string name="button_login">登录</string>
+    <string name="button_signup">注册</string>
+    <string name="default_usr">请输入用户名</string>
+    <string name="default_passwd">请输入密码</string>
+    <string name="control_board">灯光控制台</string>
+    <string name="light_open">打开灯光</string>
+    <string name="light_shut">关闭灯光</string>
+    <string name="light_flash">关于程序</string>
+    <string name="processing">处理中</string>
+    <string name="pls_wait">请等待……</string>
+    <string name="welcome_message">欢迎使用本应用</string>
+    <string name="done">确定</string>
+    <string name="login_success">登陆成功</string>
+    <string name="login_failed">登录失败</string>
+    <string name="login_failed_msg">用户名或密码错误</string>
+    <string name="network_err">网络错误</string>
+    <string name="network_err_msg">请检查网络连接</string>
+    <string name="success">控制成功</string>
+    <string name="failed">控制失败，设备可能不在线</string>
+    <string name="notice">通知</string>
+    <string name="version">Android v1.0.0.24Q2 Release</string>
+    <string name="about">关于软件</string>
+    <string name="developer">开发者：Jackson Hao</string>
+    <string name="github">本程序所有代码已在Github上开源 ﻿</string>
+    <string name="main_page">控制中心</string>
+    <string name="main_light">灯光控制</string>
+    <string name="main_alarm">警报控制</string>
+    <string name="main_more">更多功能</string>
+    <string name="notice_more">更多功能正在开发中</string>
+    <string name="alarm_on">启用警报</string>
+    <string name="alarm_off">解除警报</string>
+</resources>
