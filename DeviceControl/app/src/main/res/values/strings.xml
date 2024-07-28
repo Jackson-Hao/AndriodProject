@@ -21,7 +21,7 @@
     <string name="success">Success</string>
     <string name="failed">Failed！Device may offline</string>
     <string name="notice">Notice</string>
-    <string name="version">Android v1.0.0.24Q2 Release</string>
+    <string name="version">Android v1.0.0.24R2V2</string>
     <string name="about">About</string>
     <string name="developer">Developer: Jackson Hao</string>
     <string name="github">All the code of this program has been open sourced on Github</string>
@@ -32,6 +32,11 @@
     <string name="notice_more">More function is developing</string>
     <string name="alarm_on">Set Alarm</string>
     <string name="alarm_off">Reset Alarm</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="default_passwdagain">Please enter password again</string>
+    <string name="signup_successful">Sign up successful</string>
+    <string name="signup_failed_pwd">Sign up failed: Password error</string>
+    <string name="signup_failed_exi">Sign up failed: User existed</string>
     <!-- Strings used for fragments for navigation -->
 
 </resources>

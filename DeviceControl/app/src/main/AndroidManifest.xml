@@ -43,7 +43,8 @@
         <activity
             android:name=".AboutActivity"
             android:exported="true" />
-        
+        <activity android:name=".SignUpActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

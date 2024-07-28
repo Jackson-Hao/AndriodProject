@@ -22,7 +22,7 @@
     <string name="success">控制成功</string>
     <string name="failed">控制失败，设备可能不在线</string>
     <string name="notice">通知</string>
-    <string name="version">Android v1.0.0.24Q2 Release</string>
+    <string name="version">Android v1.0.0.24R2V2</string>
     <string name="about">关于软件</string>
     <string name="developer">开发者：Jackson Hao</string>
     <string name="github">本程序所有代码已在Github上开源 ﻿</string>
@@ -33,4 +33,9 @@
     <string name="notice_more">更多功能正在开发中</string>
     <string name="alarm_on">启用警报</string>
     <string name="alarm_off">解除警报</string>
+    <string name="sign_up">注册账户</string>
+    <string name="default_passwdagain">请再次输入密码</string>
+    <string name="signup_successful">注册成功</string>
+    <string name="signup_failed_pwd">注册失败：两次密码输入不一致</string>
+    <string name="signup_failed_exi">注册失败：用户已存在</string>
 </resources>

@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         Button bt_light = findViewById(R.id.main_light);
         Button bt_alarm = findViewById(R.id.main_alarm);
         Button bt_more = findViewById(R.id.main_more);
+
 
         bt_light.setOnClickListener(v -> clickToLight());
         bt_alarm.setOnClickListener(v -> clickToAlarm());

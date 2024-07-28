@@ -72,6 +72,13 @@ public class LoginActivity extends AppCompatActivity {
         Button button = findViewById(R.id.button_login);
         TextView tvt_usr = findViewById(R.id.editTextText);
         TextView tvt_pass = findViewById(R.id.editTextTextPassword);
+        TextView tv_signup = findViewById(R.id.tv_signup);
+
+        tv_signup.setOnClickListener(v -> {
+            Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
+            startActivity(intent);
+        });
+
 
         button.setOnClickListener(v -> {
             String usr = tvt_usr.getText().toString();
