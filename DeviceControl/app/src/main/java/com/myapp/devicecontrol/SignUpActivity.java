@@ -55,7 +55,7 @@ public class SignUpActivity extends AlarmControlActivity {
             String password = tvt_password.getText().toString();
             String passwordagain = tvt_passwordagain.getText().toString();
             String jsonData = "{\"username\":\"" + username + "\",\"password\":\"" + password + "\"}";
-            if (password.equals(passwordagain)) {
+            if (password.equals(passwordagain) && !username.isEmpty() && !password.isEmpty()){
                 try {
                         String result = HT.SendHttpRequest(jsonData, signup_url);
                     if (result.equals("successful")) {
@@ -66,9 +66,12 @@ public class SignUpActivity extends AlarmControlActivity {
                 } catch (IOException | JSONException e) {
                     e.printStackTrace();
                 }
+            } else if(username.isEmpty() || password.isEmpty() || passwordagain.isEmpty()){
+                showEmptyDialog();
             } else {
                 showSignupFailDialog_err();
             }
+
         });
 
     }
@@ -109,6 +112,20 @@ public class SignUpActivity extends AlarmControlActivity {
         alertDialog = new AlertDialog.Builder(this)
                 .setTitle(getString(R.string.notice))
                 .setMessage(getString(R.string.signup_failed_exi))
+                .setPositiveButton(getString(R.string.done), (dialog, which) -> {
+                    alertDialog.dismiss();
+                })
+                .create();
+        alertDialog.show();
+    }
+
+    private void showEmptyDialog() {
+        if (alertDialog != null) {
+            alertDialog.dismiss();
+        }
+        alertDialog = new AlertDialog.Builder(this)
+                .setTitle(getString(R.string.notice))
+                .setMessage(getString(R.string.empty_message))
                 .setPositiveButton(getString(R.string.done), (dialog, which) -> {
                     alertDialog.dismiss();
                 })

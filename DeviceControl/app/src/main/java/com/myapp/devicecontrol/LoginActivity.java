@@ -83,6 +83,9 @@ public class LoginActivity extends AppCompatActivity {
         button.setOnClickListener(v -> {
             String usr = tvt_usr.getText().toString();
             String pass = tvt_pass.getText().toString();
+            if (usr.isEmpty() || pass.isEmpty()) {
+                showEmptyDialog();
+            } else {
             String jsonData = "{\"username\":\"" + usr + "\",\"password\":\"" + pass + "\"}";
             String response = null;
             try {
@@ -95,6 +98,7 @@ public class LoginActivity extends AppCompatActivity {
             } else {
                 showLoginFailDialog();
             }
+            }
         });
     }
 
@@ -105,6 +109,7 @@ public class LoginActivity extends AppCompatActivity {
         AlertDialog.Builder builder_login = new AlertDialog.Builder(this);
         builder_login.setTitle(getString(R.string.tv_1));
         builder_login.setMessage(getString(R.string.welcome_message));
+        builder_login.setCancelable(false);
         builder_login.setPositiveButton(R.string.done, (dialog, which) -> {
             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
             alertDialog.dismiss();
@@ -120,6 +125,7 @@ public class LoginActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(getString(R.string.login_failed));
         builder.setMessage(getString(R.string.login_failed_msg));
+        builder.setCancelable(false);
         builder.setPositiveButton(getString(R.string.done), (dialog, which) -> alertDialog.dismiss());
         alertDialog = builder.create();
         alertDialog.show();
@@ -129,10 +135,21 @@ public class LoginActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(getString(R.string.notice));
         builder.setMessage(getString(R.string.network_err_msg));
+        builder.setCancelable(false);
         builder.setPositiveButton(getString(R.string.done), (dialog, which) -> {
             alertDialog.dismiss();
             finish();
         });
+        alertDialog = builder.create();
+        alertDialog.show();
+    }
+
+    private void showEmptyDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(getString(R.string.notice));
+        builder.setMessage(getString(R.string.empty_message));
+        builder.setCancelable(false);
+        builder.setPositiveButton(getString(R.string.done), (dialog, which) -> alertDialog.dismiss());
         alertDialog = builder.create();
         alertDialog.show();
     }

@@ -8,11 +8,11 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.myapp.devicecontrol"
+        applicationId = "com.android.devicecontrol"
         minSdk = 31
         targetSdk = 34
         versionCode = 1 // 这是版本号
-        versionName = "Android v1.0.0.24Q2 Release" // 这是版本名
+        versionName = "Android.0.0.24R2V2C01" // 这是版本名
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
